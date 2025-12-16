@@ -1,19 +1,25 @@
 #include <iostream> 
 using namespace std;
 #include "node.h"
-#include "student.h"
-Node::getNext() {
-  return node*;
-}
 
-void Node::setNext(Node*) {
-
-}
 //constructor
-Node::Node(Student*) {
-
+Node::Node(Student* newStudent) {
+  student = newStudent;
+  next = nullptr;
 }
 //destructor
 Node::~Node() {
-  //cleanup
+  next = nullptr;
+}
+
+Node* Node::getNext() {
+  return next;
+}
+
+void Node::setNext(Node* newNext) {
+  next = newNext;
+}
+
+Student* Node::getStudent() {
+  return student;
 }
