@@ -10,7 +10,7 @@ class Student {
   private:
     int id;
     char name[100];
-}
+};
 
 
 #endif
