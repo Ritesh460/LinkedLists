@@ -11,7 +11,7 @@ Node::Node(Student* newStudent) {
 Node::~Node() {
   next = nullptr;
 }
-
+//get next nodes for printing
 Node* Node::getNext() {
   return next;
 }
@@ -19,7 +19,7 @@ Node* Node::getNext() {
 void Node::setNext(Node* newNext) {
   next = newNext;
 }
-
+//get the student included in node
 Student* Node::getStudent() {
   return student;
 }
