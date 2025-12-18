@@ -1,15 +1,15 @@
 #include <iostream>
 #include <cstring>
-#include "node.h"
+#include "student.h"
 using namespace std;
 //constructor
 Student::Student(int newID, const char* newName) {
-  int id;
-  char name[100];
+  id = newID;
+  strcpy(name, newName);
 }
 //destructor
 Student::~Student() {
-  return nullptr;
+  
 }
 //return student ID
 int Student::getID() {
