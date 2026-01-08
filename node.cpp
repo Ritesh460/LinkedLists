@@ -9,7 +9,7 @@ Node::Node(Student* newStudent) {
 }
 //destructor
 Node::~Node() {
-  next = nullptr;
+  delete student;
 }
 //get next nodes for printing
 Node* Node::getNext() {

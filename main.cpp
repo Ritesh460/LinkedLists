@@ -17,9 +17,6 @@ int main () {
   //clean up memory
   delete n1;
   delete n2;
-  delete s1;
-  delete s2;
-
   return 0;
 }
 
